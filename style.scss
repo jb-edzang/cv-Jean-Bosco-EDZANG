@@ -1,0 +1,42 @@
+
+ body{
+    @media screen and (min-width: 968px) {
+        body {
+          padding: 2rem 2rem;
+          text-align: justify;
+        }
+    }
+    .container {
+        max-width: 1200px;
+        margin: auto;
+        width: 100%;
+        .header{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @media screen and (min-width: 968px){
+                .header{
+                    justify-content: space-between;
+                    flex-direction: row;
+                }
+            }
+        }
+        
+        h1:hover {
+            color:red;
+            border: 2px solid yellowgreen;
+            background-color: yellowgreen;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+        @media screen and (min-width: 968px){
+            h1{
+                border: 3px solid darkcyan;
+                border-left: none;
+                border-top: none;
+                border-right: none;
+            }
+        }
+    }
+} 
+
