@@ -46,6 +46,7 @@ body .container .header img {
   border-top-right-radius: 30px;
   width: 250px;
   height: 250px;
+  background-color: black;
 }
 
 @media screen and (min-width: 968px) {
