@@ -1,7 +1,7 @@
 
  body{
      background-color: #f2f2f2;
-    @media screen and (min-width: 968px) {
+    @media screen and (max-width: 667px) {
         body {
           padding: 2rem 2rem;
           text-align: justify;
@@ -14,14 +14,8 @@
         .header{
             display: flex;
             align-items: center;
+            flex-direction: row;
             justify-content: space-between;
-
-            @media screen and (min-width: 968px){
-                .header{
-                    display: flex;
-                    flex-direction: column;
-                }
-            }
             img{
                 margin-left: auto;
                 vertical-align: middle;
@@ -30,10 +24,11 @@
                 width: 250px;
                 height:250px;
                 background-color: black;
-                @media screen and (min-width: 968px){
-                    display: flex;
-                    flex-direction: column;
-                }
+            }
+            @media screen and (max-width: 667px){
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 20px;
             }
         }
         
@@ -44,12 +39,19 @@
             text-transform: uppercase;
             cursor: pointer;
         }
-        @media screen and (min-width: 968px){
+        @media screen and (max-width: 667px){
             h1{
                 border: 3px solid darkcyan;
                 border-left: none;
                 border-top: none;
                 border-right: none;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 15px;
+            }
+            .btn{
+                display: flex;
+                margin:auto;
             }
         }
         a{
